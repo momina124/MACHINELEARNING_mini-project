@@ -1,0 +1,114 @@
+{
+    "model_name": "Random Forest Classifier",
+    "trained_at": "2026-11-19T14:21:28.341039",
+    "best_threshold": 0.27,
+    "metrics": {
+        "accuracy": 0.631653655074521,
+        "precision": 0.41500586166471276,
+        "recall": 0.946524064171123,
+        "f1_score": 0.5770171149144254,
+        "roc_auc": 0.8449624118422072,
+        "pr_auc": 0.6524559616597663
+    },
+    "dataset_summary": {
+        "total_records": 7043,
+        "train_records": 5634,
+        "test_records": 1409,
+        "churn_count": 1869,
+        "retained_count": 5174,
+        "churn_rate_pct": 26.54,
+        "retained_rate_pct": 73.46
+    },
+    "cross_validation": {
+        "Logistic Regression": {
+            "mean_accuracy": 0.7484935405933167,
+            "std_accuracy": 0.012424675750105408,
+            "mean_precision": 0.5170051290416123,
+            "std_precision": 0.01553938631287155,
+            "mean_recall": 0.7919732441471572,
+            "std_recall": 0.03604600290383273,
+            "mean_f1": 0.6254488406254758,
+            "std_f1": 0.020660950707737245,
+            "mean_roc_auc": 0.8459032527779199,
+            "std_roc_auc": 0.01109073347078788
+        },
+        "Random Forest Classifier": {
+            "mean_accuracy": 0.7531085057391558,
+            "std_accuracy": 0.01061621414106072,
+            "mean_precision": 0.5231053997891393,
+            "std_precision": 0.013575856032317925,
+            "mean_recall": 0.7966555183946488,
+            "std_recall": 0.01166260586900514,
+            "mean_f1": 0.6314403209909958,
+            "std_f1": 0.01181918684113011,
+            "mean_roc_auc": 0.8469587643659551,
+            "std_roc_auc": 0.008941522489828487
+        },
+        "XGBoost Classifier": {
+            "mean_accuracy": 0.7536404197944526,
+            "std_accuracy": 0.01003693202678867,
+            "mean_precision": 0.5238287016540067,
+            "std_precision": 0.012863090219136888,
+            "mean_recall": 0.7892976588628764,
+            "std_recall": 0.02317124826179103,
+            "mean_f1": 0.6296402329300242,
+            "std_f1": 0.014997458484325947,
+            "mean_roc_auc": 0.8467755640849223,
+            "std_roc_auc": 0.010440874730780291
+        },
+        "Random Forest + SMOTE": {
+            "mean_accuracy": 0.7752955472095394,
+            "std_accuracy": 0.010160589355451886,
+            "mean_precision": 0.5590275998943983,
+            "std_precision": 0.016096201009259795,
+            "mean_recall": 0.728428093645485,
+            "std_recall": 0.02171596398762267,
+            "mean_f1": 0.6324148428125008,
+            "std_f1": 0.015140521549092827,
+            "mean_roc_auc": 0.8435252346118025,
+            "std_roc_auc": 0.008133679457154415
+        }
+    },
+    "top_features": [
+        {
+            "Feature": "is_monthly_contract_0",
+            "Mean_SHAP_Value": 0.04842513367621339
+        },
+        {
+            "Feature": "Contract_Month-to-month",
+            "Mean_SHAP_Value": 0.0475739587298188
+        },
+        {
+            "Feature": "InternetService_Fiber optic",
+            "Mean_SHAP_Value": 0.04508827027969572
+        },
+        {
+            "Feature": "is_monthly_contract_1",
+            "Mean_SHAP_Value": 0.03696486820811622
+        },
+        {
+            "Feature": "tenure",
+            "Mean_SHAP_Value": 0.03234219140365182
+        },
+        {
+            "Feature": "Contract_Two year",
+            "Mean_SHAP_Value": 0.023685910618322478
+        },
+        {
+            "Feature": "tenure_group_0-12 months",
+            "Mean_SHAP_Value": 0.023531067526951256
+        },
+        {
+            "Feature": "PaymentMethod_Electronic check",
+            "Mean_SHAP_Value": 0.023510649120624345
+        },
+        {
+            "Feature": "MonthlyCharges",
+            "Mean_SHAP_Value": 0.022036727490465053
+        },
+        {
+            "Feature": "avg_monthly_spend",
+            "Mean_SHAP_Value": 0.021705817742767402
+        }
+    ]
+}
